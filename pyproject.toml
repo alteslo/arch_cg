@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi>=0.124.2",
+    "requests>=2.32.5",
 ]
 
 # === Настройки форматирования кода с помощью Black ===
@@ -21,12 +22,12 @@ preview = false
 profile = "black"
 known_first_party = ["app"]
 sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY"]
-line_length = 120
+line_length = 100
 multi_line_output = 3
 
 # === Настройки линтера и форматтера Ruff (альтернатива black) ===
 [tool.ruff]
-line-length = 120
+line-length = 100
 target-version = "py311"
 
 [tool.ruff.format]
